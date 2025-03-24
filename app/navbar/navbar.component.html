@@ -1,0 +1,21 @@
+<nav [ngClass]="{'scrolled': isScrolled}">
+  <div class="logo">
+    <img src="assets/profile.jpg" alt="Logo" routerLink="/home">
+    <span class="logo-name">DUSHAL</span>
+  </div>
+  
+  <!-- Navbar Links -->
+  <div class="navbar-items" [ngClass]="{'active': isMenuActive}">
+    <a routerLink="/about" (click)="closeMenu()">About</a>
+    <a routerLink="/projects" (click)="closeMenu()">Projects</a>
+    <a routerLink="/skills" (click)="closeMenu()">Skills</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger-menu" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>

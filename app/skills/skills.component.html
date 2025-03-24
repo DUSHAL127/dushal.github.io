@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<section class="skills-section">
+    <div class="content">
+      <h2>My Skills</h2>
+
+      <div class="skills-container">
+        <div *ngFor="let skill of skills; let i = index" class="skill">
+          <div class="skill-bar">
+            <div 
+              class="skill-fill" 
+              [style.width.%]="proficiencyValues[i]" 
+              [style.background]="skill.gradient">
+            </div>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">{{ typedSkills[i] || '' }}</span>
+            <span class="skill-percentage">{{ proficiencyValues[i] }}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sparkle Effects -->
+    <div class="sparkles-container">
+      <div *ngFor="let sparkle of sparkles" 
+           class="sparkle"
+           [style.left.px]="sparkle.x"
+           [style.top.px]="sparkle.y">
+      </div>
+    </div>
+</section>

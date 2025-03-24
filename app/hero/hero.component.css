@@ -1,0 +1,155 @@
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Profile Image */
+  .profile-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Outer Neon Glow Ring */
+  .glow-ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 
+                0 0 40px rgba(0, 255, 0, 0.5);
+    animation: rotateRing 6s linear infinite;
+  }
+  
+  /* Rotating Glow Animation */
+  @keyframes rotateRing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+  }
+  
+  /* Animated Inner Glow */
+  .profile-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    animation: flickerGlow 1.5s infinite alternate;
+  }
+  
+  /* Flickering Glow Effect */
+  @keyframes flickerGlow {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+    50% { box-shadow: 0 0 15px rgba(0, 255, 255, 1); }
+    100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+  }
+  
+  /* Typing Text */
+  .text-container {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Sparkle Effect */
+  .sparkles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fadeOut 1s linear forwards;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(2); }
+  }
+  
+  /* Action Buttons */
+  .cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .cta-buttons .btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-buttons .hire-me {
+    background-color: #6e7cfc;
+    color: white;
+  }
+  
+  .cta-buttons .download-cv {
+    background-color: #ff6a00;
+    color: white;
+  }
+  
+  .cta-buttons .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 0 10px;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .cta-buttons .btn {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,59 @@
+.about-section {
+    background: #1e1e1e; /* Terminal-like dark background */
+    padding: 40px;
+    color: white; /* White text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal effect */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    animation: typing 2s steps(20) 1s forwards; /* Animation for typing effect */
+  }
+  
+  /* Typing animation effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .link {
+    color: #00b5e2; /* Light blue color for links */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

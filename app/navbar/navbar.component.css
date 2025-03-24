@@ -1,0 +1,117 @@
+/* Navbar Base Styles */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar Scrolled Effect */
+nav.scrolled {
+  background-color: #222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Items (Desktop) */
+.navbar-items {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar-items a:hover {
+  background-color: #FFD700;
+}
+
+/* Logo */
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav .logo-name {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Hide Default Navbar Items */
+  .navbar-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Show Menu When Active */
+  .navbar-items.active {
+    display: flex;
+  }
+
+  /* Show Hamburger on Mobile */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Add Some Animation */
+  .hamburger-menu .bar {
+    transition: transform 0.3s;
+  }
+
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
