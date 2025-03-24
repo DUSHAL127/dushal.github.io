@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdushal_portfolio=self.webpackChunkdushal_portfolio||[]).push([[869],{5:()=>{}},s=>{s(s.s=5)}]);
