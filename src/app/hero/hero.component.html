@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<section class="hero-section">
+  <div class="content">
+    <!-- Profile Image with Animated Glow -->
+    <div class="profile-container">
+      <div class="glow-ring"></div>  <!-- Outer Ring Glow -->
+      <img src="assets/profile.jpg" alt="Profile" class="profile-image" >
+      <div class="profile-glow"></div> <!-- Inner Glow -->
+    </div>
+
+    <!-- Typing Text -->
+    <div class="text-container">
+      <p *ngFor="let line of displayedText">{{ line }}</p>
+    </div>
+
+    <!-- Action Buttons (Hire Me, Download CV) -->
+    <div class="cta-buttons">
+      <button class="btn hire-me" (click)="hireMe()">Hire Me</button>
+      <a href="assets/CV.pdf" download>
+        <button class="btn download-cv">Download CV</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sparkle Effects -->
+  <div class="sparkles-container">
+    <div *ngFor="let sparkle of sparkles" 
+         class="sparkle"
+         [style.left.px]="sparkle.x"
+         [style.top.px]="sparkle.y">
+    </div>
+  </div>
+</section>
+<app-skills></app-skills>
+<app-projects></app-projects>
+<app-about></app-about>
+<app-contact></app-contact>

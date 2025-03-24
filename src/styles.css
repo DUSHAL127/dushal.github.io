@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding and borders do not affect the layout */
+}
+
+/* Body styles */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1e1e1e;  /* Dark background color */
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+/* Optional: Add a global container to add padding for the content */
+.container {
+    padding-top: 70px;  /* To compensate for fixed navbar height */
+    margin: 0 auto;
+}
+
+/* Optional: Make sure the navbar does not overlap the content */
+section {
+    padding-top: 70px;  /* Adjust depending on your navbar height */
+}
+
+/* Additional styling to prevent overlapping content */
+main {
+    padding-top: 20px;
+}

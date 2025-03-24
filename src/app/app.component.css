@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    background-color: #1e1e1e; /* Dark background like terminal */
+    color: #dcdcdc; /* Light text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal look */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  /* Header/Navbar (GitHub inspired) */
+  .navbar {
+    background-color: #2d2d2d; /* Dark navbar */
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Terminal Effect Container */
+  .terminal-container {
+    background-color: #000; /* Black background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+  }
+  
+  .terminal-text {
+    color: #0f0; /* Green text like a terminal */
+    font-size: 18px;
+    white-space: pre-wrap;
+  }
+  
+  /* Project List */
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual Project Card */
+  .project-card {
+    background-color: #2d2d2d; /* Dark card background */
+    color: #dcdcdc; /* Light text */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .project-title {
+    color: #00bcd4; /* Light blue color for titles */
+    font-size: 1.2rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  /* Links (GitHub and Live Demo) */
+  .project-links a {
+    color: #0d76a8; /* GitHub blue color */
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .project-links a:hover {
+    color: #1dbf73; /* Hover color */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2d2d2d;
+    color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  

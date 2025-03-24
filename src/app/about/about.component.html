@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<section class="about-section">
+    <div class="content">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p *ngFor="let text of aboutText">{{ text }}</p>
+      </div>
+  
+      <div class="links">
+        <p>Connect with me:</p>
+        <a href="{{ links.linkedin }}" target="_blank" class="link">LinkedIn</a>
+        <a href="{{ links.github }}" target="_blank" class="link">GitHub</a>
+      </div>
+    </div>
+  </section>
+  
